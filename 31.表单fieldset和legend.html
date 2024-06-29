@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+    <head>
+        <title></title>
+        <meta chatset='UTF-8'>
+    </head>
+    <body>
+        <form action="https://search.jd.com/search">
+            <fieldset>
+                <legend>主要信息</legend>
+                    <label for="account">账户: </lable><input type="text" id="account" name="username" value="默认值" maxlength="10"><br>
+                        <label>
+                            密码: <input type="password" name="psw" value="111" maxlength="15">
+                        </label>
+                        <br>
+                        <span>性别:</span> 
+                            <label>
+                                <input type="radio" name="gender" value="male">男 
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female">女
+                            </label>
+            </fieldset>
+            <fieldset>
+                <legend>次要信息</legend>
+                    <span>爱好:</span>
+                        <label>
+                            <input type="checkbox" name="hobby" value="one">抽烟
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hobby" value="two">喝酒
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hobby" value="three">烫头
+                        </label>
+                    <br>
+                    <span>其他</span>
+                        <textarea name="other" cols="20" rows="5"></textarea>
+                    <br>
+                    <span>籍贯:</span>
+                    <select name="place">
+                        <option value="鲁">山东省</option>
+                        <option value="皖">安徽省</option>
+                    </select>
+            </fieldset>
+            <br>
+            <input type="hidden" name="hiddenText" value="防伪标识">
+            <input type="submit" value="确认">
+            <button type="reset">重置</button>
+            <input type="button" value="检测账号是否被注册">
+        </form>
+    </body>
+</html>

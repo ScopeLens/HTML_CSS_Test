@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+    <head>
+        <title></title>
+        <meta chatset='UTF-8'>
+    </head>
+    <body>
+        <form action="https://search.jd.com/search">
+            <sapn>账户:</sapn><input type="text" name="username" value="默认值" maxlength="10"><br>
+            <span>密码:</span><input type="password" name="psw" value="111" maxlength="15"><br>
+            <span>性别:</span> 
+                <input type="radio" name="gender" value="male" checked>男 
+                <input type="radio" name="gender" value="female">女
+            <br>
+            <span>爱好:</span>
+                <input type="checkbox" name="hobby" value="one">抽烟
+                <input type="checkbox" name="hobby" value="two">喝酒
+                <input type="checkbox" name="hobby" value="three">烫头
+            <br>
+            <span>其他</span>
+                <textarea name="other" cols="20" rows="5"></textarea>
+            <br>
+            <span>籍贯:</span>
+            <select name="place">
+                <option value="鲁">山东省</option>
+                <option value="皖" selected>安徽省</option>
+            </select>
+            <br>
+            <!-- 确认按钮的第一种写法 -->
+            <!-- <button type="submit">确认</button> -->
+            <!-- 确认按钮的第二种写法 -->
+            <input type="submit" value="确认">
+
+            <!-- 重置按钮的第一种写法 -->
+            <button type="reset">重置</button>
+            <!-- 重置按钮的第二种写法 -->
+            <!-- <input type="reset" value="重置"> -->
+
+            <!-- 普通按钮的第一种写法 -->
+            <!-- <button type="button">检测账号是否被注册</button> -->
+            <!-- 普通按钮的第二种写法 -->
+            <input type="button" value="检测账号是否被注册">
+            <!-- 隐藏域 -->
+            <input type="hidden" name="hiddenText" value="防伪标识">
+        </form>
+    </body>
+</html>

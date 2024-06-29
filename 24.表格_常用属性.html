@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+    <head>
+        <title></title>
+        <meta chatset='UTF-8'>
+    </head>
+    <body>
+        <!-- 如果调整table的border属性大于1，只能使整体的外边框变化，无法使单元格的边框大小改变。 -->
+        <table border="5" width="300" heigth="500" cellspacing="0">
+            <!-- 标题 -->
+            <caption>学生信息</caption>
+            <!-- 表格头部 -->
+            <thead height="30" align="center" valign="middle">
+                <tr>
+                    <!-- 如果调整单元格的高度和宽度，会使得其所在的行列都变化 -->
+                    <th height="50" width="60" align="right" valign="top">姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>民族</th>
+                    <th>政治面貌</th>
+                </tr>
+            </thead>
+            <!-- 表格主体 -->
+            <tbody height="120" align="center" valign="middle">
+                <tr height="50" align="left" valign="bottom">
+                    <td>张三</td>
+                    <td>男</td>
+                    <td>18</td>
+                    <td>汉族</td>
+                    <td>团员</td>
+                </tr>
+                <tr height="60" align="right" valign="top">
+                    <td>李四</td>
+                    <td>男</td>
+                    <td>18</td>
+                    <td>汉族</td>
+                    <td>团员</td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>男</td>
+                    <td>19</td>
+                    <td>汉族</td>
+                    <td>党员</td>
+                </tr>
+                <tr>
+                    <td>赵六</td>
+                    <td>男</td>
+                    <td>25</td>
+                    <td>汉族</td>
+                    <td>团员</td>
+                </tr>
+            </tbody>
+            <!-- 表格脚注 -->
+             <tfoot height="30" align="center" valign="middle">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>共计4人</td>
+                </tr>
+             </tfoot>
+        </table>
+    </body>
+</html>
