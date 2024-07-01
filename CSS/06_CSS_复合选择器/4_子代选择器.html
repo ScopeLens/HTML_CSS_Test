@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            div p>span{
+                color: blueviolet;
+            }
+            /* 用>表示只选择子代，不包括子代以外的后代元素 */
+            ul>li {
+                color: green;
+                font-size: large;
+            }
+            .chat li{
+                color: red;
+            }
+            .chat a{
+                color: gray;
+                font-size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <div>
+            <p>4</p>
+            <p>5</p>
+            <p>
+                <span>
+                    6
+                </span>
+            </p>
+            
+        </div>
+        <ol class="chat">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>
+                <a href="#">你好</a>
+            </li>
+        </ol>
+        <script>
+            
+        </script>
+    </body>
+</html>

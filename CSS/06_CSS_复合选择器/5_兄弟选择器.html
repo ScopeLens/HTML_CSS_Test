@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 兄弟选择器：
+                紧紧相连兄弟选择器(只选择当前被选择以下的元素)
+                通用兄弟选择器 */
+            .item1+li{
+                color: yellow;
+            }
+            p~p{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="item1">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <div>
+            <p>4</p>
+            <p>5</p>
+            <p>
+                <span>
+                    6
+                </span>
+            </p>
+            
+        </div>
+        <ol class="chat">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>
+                <a href="#">你好</a>
+            </li>
+        </ol>
+        <script>
+            
+        </script>
+    </body>
+</html>
