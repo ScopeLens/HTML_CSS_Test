@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 选中第一个字符 */
+            div::first-letter{
+                color: rgb(56, 233, 94);
+                font-size: large;
+            }
+            /* 选中第一行 */
+            div::first-line{
+                background-color: gold;
+            }
+            /* 被选中的元素 */
+            div::selection{
+                background-color: blue;
+            }
+            /* 选中提示语 */
+            input::placeholder{
+                color: red;
+            }
+            /* 选中p元素最开始的位置，随后创建一个子元素 */
+            p::before{
+                content: "￥";
+            }
+            /* 选中p元素结尾的位置，随后创建一个子元素 */
+            p::after{
+                content: ".00";
+            }
+        </style>
+    </head>
+    <body>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, inventore dolorem. Id tenetur ducimus aspernatur nobis dignissimos quae in optio provident. Labore obcaecati corrupti, at nulla accusamus voluptates consequuntur tenetur!</div>
+        <input placeholder="请输入您的姓名">
+
+        <p>100</p>
+        <p>100</p>
+        <p>100</p>
+        <p>100</p>
+        <p>100</p>
+        <script>
+            
+        </script>
+    </body>
+</html>
