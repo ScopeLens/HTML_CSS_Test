@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 选中的是div的倒数第n个儿子p元素（按照所有兄弟计算）----看结构一 */
+            /* div>p:nth-last-child(3){
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是div的倒数第n个儿子p元素（按照所有同类型兄弟计算）----看结构一 */
+            /* div>p:nth-last-of-type(2){
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是没有兄弟元素的span元素（按照所有兄弟计算）----看结构二 */
+            /* span:only-child{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是没有兄弟元素的span元素（按照所有同类型兄弟计算）----看结构二 */
+            /* span:only-of-type{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是根元素 */
+            /* :root{
+                background-color: aqua;
+            } */
+
+            /* 选中的是没有子节点的div元素 */
+            /* div:empty{
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+            } */
+        </style>
+    </head>
+    <body>
+        <!-- 结构一
+        <div>
+            <p>一.张三</p>
+            <p>二.李四</p>
+            <p>三.王五</p>
+            <p>四.赵六</p>
+            <p>五.孙七</p>
+        </div> -->
+
+        结构二
+        <div></div>
+        <div>
+            <span>你好</span>
+        </div>
+        <div>
+            <span>你好</span>
+            <p>一.张三</p>
+            <p>二.李四</p>
+            <p>三.王五</p>
+            <p>四.赵六</p>
+            <p>五.孙七</p>
+            
+        </div>
+
+        <script>
+            
+        </script>
+    </body>
+</html>

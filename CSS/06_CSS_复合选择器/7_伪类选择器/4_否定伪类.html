@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 否定伪类，not()中也是一个选择器，进行排除 */
+            div>p:not(:first-child){
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>第一个</p>
+            <p>第二个</p>
+            <p>第三个</p>
+            <p>第四个</p>
+            <p>第五个</p>
+            <p>第六个</p>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

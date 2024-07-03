@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 选中的是div的第一个儿子p元素（按照所有兄弟计算）----看结构一 */
+            /* div>p:first-child{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是div的第一个儿子p元素（按照所有兄弟计算）----看结构二 */
+            /* div>p:first-child{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是div的后代p元素，且p的父亲是谁都无所谓，但是p必须是其父亲的第一个孩子（按照所有兄弟计算）----看结构三 */
+            /* div p:first-child{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是p元素，且p的父亲是谁都无所谓，但是p必须是其父亲的第一个儿子（按照所有兄弟计算）----看结构三 */
+            p:first-child{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 结构一
+        <div>
+            <p>一.张三</p>
+            <p>二.李四</p>
+            <p>三.王五</p>
+            <p>四.赵六</p>
+            <p>五.孙七</p>
+        </div> -->
+
+        <!-- 结构二
+        <div>
+            <span>你好</span>
+            <p>一.张三</p>
+            <p>二.李四</p>
+            <p>三.王五</p>
+            <p>四.赵六</p>
+            <p>五.孙七</p>
+        </div> -->
+
+        结构三
+        <p>第一项</p>
+        <div>
+            <p>测试</p>
+            <span>
+                <p>一.张三</p>
+            </span>
+            <p>二.李四</p>
+            <p>三.王五</p>
+            <p>四.赵六</p>
+            <p>五.孙七</p>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

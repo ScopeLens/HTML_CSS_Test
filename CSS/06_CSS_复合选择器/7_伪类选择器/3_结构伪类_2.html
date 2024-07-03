@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 选中的是div的第一个儿子p元素（按照所有兄弟计算）----看结构一 */
+            /* div>p:first-child{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是div的最后一个儿子p元素（按照所有兄弟计算的） ----看结构一 */
+            /* div>p:last-child{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是div的第n个儿子p元素（按照所有兄弟计算的）---看结构一 */
+            /* a*n+b  even odd括号之中可以填的表达式格式*/
+            /* div>p:nth-child(3){
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是div中的第一个儿子p元素（按照所有同类型兄弟计算的）----看结构二 */
+            /* div>p:first-of-type{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是div中的最后一个儿子p元素（按照所有同类型兄弟计算的）----看结构二 */
+            /* div>p:last-of-type{
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            } */
+
+            /* 选中的是div中第n个儿子p元素（按照所有同类型兄弟计算的）----看结构二 */
+            div>p:nth-of-type(4){
+                font-size: large;
+                color: rebeccapurple;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 结构一
+        <div>
+            <p>一.张三</p>
+            <p>二.李四</p>
+            <p>三.王五</p>
+            <p>四.赵六</p>
+            <p>五.孙七</p>
+        </div> -->
+
+        结构二
+        <div>
+            <span>你好</span>
+            <p>一.张三</p>
+            <p>二.李四</p>
+            <span>你好</span>
+            <p>三.王五</p>
+            <p>四.赵六</p>
+            <p>五.孙七</p>
+            <span>你好</span>
+        </div>
+
+        <script>
+            
+        </script>
+    </body>
+</html>
