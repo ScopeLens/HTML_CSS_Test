@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            table{
+                width: 400px;
+                border: 1px black solid;
+                /* 控制表格列宽 */
+                table-layout: fixed;
+                /* 控制单元格的间距 */
+                border-spacing: 0px;
+                /* 合并相邻单元格的边框 */
+                border-collapse: collapse;
+                /* 隐藏没有内容的单元格(生效的前提是不要合并相邻但单元格的边跨) */
+                empty-cells: hide;
+                /* 设置标题的位置 默认值为top */
+                caption-side: bottom;
+            }
+            th,td{
+                border-width: 1px;
+                border-color: orange;
+                border-style: solid;
+            }
+        </style>
+    </head>
+    <body>
+        <!--  border="1" cellspacing="0" height="100px" width="300px" -->
+        <table>
+            <caption>人员信息表</caption>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>政治面貌</th>
+                </tr>
+            </thead>
+            <!-- align="middle" -->
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>男</td>
+                    <td>18</td>
+                    <td>共青团员</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>女</td>
+                    <td>19</td>
+                    <td>党员</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            
+        </script>
+    </body>
+</html>

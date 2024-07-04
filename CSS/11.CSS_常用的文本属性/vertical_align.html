@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            div{
+                background-color: yellowgreen;
+                height: 300px;
+                font-size: 50px;
+            }
+            span{
+                font-size: 30px;
+                /* 无法控制块级元素 */
+                vertical-align: middle;
+                background-color: rebeccapurple;
+            }
+            .name{
+                /* 可以调整单元格中文文字位置 */
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Vue<span>前端</span>React
+        </div>
+        <table border="1px" cellspacing="0">
+            <caption>人员信息表</caption>
+            <thead>
+                <tr height="100px">
+                    <th class="name">姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>男</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>女</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            
+        </script>
+    </body>
+</html>
