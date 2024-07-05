@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            #outer{
+                width: 500px;
+                height: 500px;
+                background-color: aqua;
+                padding: 100px;
+                margin: 20px;
+            }
+            #inner{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                margin: 20px;
+            }
+
+            .one{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            .two{
+                margin-top: 10px;
+                margin-bottom: 20px;
+                width: 100px;
+                height: 100px;
+                background-color: rgb(45, 105, 195);
+            }
+            .three{
+                width: 100px;
+                height: 100px;
+                background-color: rgb(38, 230, 166);
+            }
+
+            .s1{
+                background-color: red;
+            }
+            .s2{
+                margin-top: 10px;
+                margin-bottom: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: rgb(32, 215, 75);
+            }
+            .s3{
+                background-color: rgb(26, 99, 224);
+            }
+
+            .test1{
+                width: 100px;
+                height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: blue;
+            }
+            .test2{
+                margin-left: auto;
+                margin-right: auto;
+                background-color: rgb(33, 224, 167);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            注意事项:子元素的margin是参考父元素的content设置的(子元素的所有设置都在父元素的内容区生效)
+            <div id="inner"></div>
+        </div>
+
+        注意事项:上左margin会影响自己的位置，下右margin会影响兄弟元素的位置
+        <div class="one">一</div>
+        <div class="two">二</div>
+        <div class="three">三</div>
+        <hr>
+        注意事项:块级，行内块级元素都可以设置四边的margin，但是行内元素设置上下的margin没有效果
+        <hr>
+        <span class="s1">一</span><span class="s2">二</span><span class="s3">三</span>
+        <hr>
+        注意事项:margin的值可以是auto，他会自动设置为可以设置的最大值，当给一个块级元素设置其左右margin为auto时，则会使其水平居中
+        <div class="test1"></div>
+        <span class="test2">这是一个测试</span>
+        注意事项:margin可以是负值
+
+        <script>
+            
+        </script>
+    </body>
+</html>

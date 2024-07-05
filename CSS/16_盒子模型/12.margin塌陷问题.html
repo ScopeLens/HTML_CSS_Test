@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .outer{
+                width: 300px;
+                background-color: brown;
+                /* 当为第一个子元素设置上margin和最后一个子元素设置下margin时，会被其父亲元素抢走，设置以下三个属性其中任何一个，都可以修复这个问题 */
+                /* padding: 1px; */
+                /* border: 1px solid black; */
+                /* overflow: hidden; */
+            }
+            .inner1{
+                margin-top: 120px;
+                width: 100px;
+                height: 100px;
+                background-color: lightblue;
+            }
+            .inner2{
+                margin-bottom: 120px;
+                width: 100px;
+                height: 100px;
+                background-color: forestgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner1"></div>
+            <div class="inner2"></div>
+        </div>
+        <div>test</div>
+        <script>
+            
+        </script>
+    </body>
+</html>
