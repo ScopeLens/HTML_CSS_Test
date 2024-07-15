@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .banner{
+                width: 960px;
+                text-align: center;
+                line-height: 80px;
+            }
+            .leftfix{
+                float: left;
+            }
+            .rightfix{
+                float: right;
+            }
+            .bgColor{
+                background-color: rgba(128, 128, 128, 0.462);
+            }
+            .clearfix::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #logo{
+                width: 200px;
+            }
+            #banner1{
+                width: 540px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            #banner2{
+                width: 200px;
+            }
+            #menu{
+                width: 960px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                margin-top: 10px;
+            }
+            .box{
+                height: 420px;
+                width: 960px;
+                text-align: center;
+                line-height: 100px;
+            }
+            .window1{
+                width: 368px;
+                height: 198px;
+                border: 1px solid black;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            .window2{
+                width: 178px;
+                height: 198px;
+                border: 1px solid black; 
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            .window3{
+                width: 198px;
+                height: 128px;
+                border: 1px solid black;
+                margin-top: 10px;
+            }
+            #pagefoot{
+                text-align: center;
+                line-height: 60px;
+                width: 960px;
+                height: 60px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- 页头 -->
+            <div class="banner clearfix">
+                <div class="leftfix bgColor" id="logo">logo</div>
+                <div class="leftfix bgColor" id="banner1">banner1</div>
+                <div class="leftfix bgColor" id="banner2">banner2</div>
+            </div>
+            <!-- 菜单 -->
+            <div class="bgColor" id="menu">菜单</div>
+            <!-- 正文 -->
+            <div class="box">
+                <!-- 左侧页面 -->
+                <div class="leftPage leftfix">
+                    <div class="box1">
+                        <div class="window1 leftfix">栏目一</div>
+                        <div class="window1 leftfix">栏目二</div>
+                    </div>
+                    <div class="box2">
+                        <div class="window2 leftfix">栏目三</div>
+                        <div class="window2 leftfix">栏目四</div>
+                        <div class="window2 leftfix">栏目五</div>
+                        <div class="window2 leftfix">栏目六</div>
+                    </div>
+                </div>
+                <!-- 右侧页面 -->
+                <div class="rightPage rightfix">
+                    <div class="window3">栏目七</div>
+                    <div class="window3">栏目八</div>
+                    <div class="window3">栏目九</div>
+                </div>
+            </div>
+            <!-- 页脚 -->
+            <div class="bgColor" id="pagefoot">页脚</div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

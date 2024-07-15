@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .container{
+                width: 300px;
+                height: 400px;
+                background-color: aqua;
+                /* 包含块 */
+                position: relative;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+            }
+            .box1{
+                background-color: rebeccapurple;
+            }
+            .box2{
+                background-color: red;
+                /* 绝对定位会脱离文档流，且无法与float同时使用 */
+                /* 无论什么元素，设置绝对定位时，都变成了定位元素 */
+                /* 何为定位元素：默认宽高都是被内容撑开，且能自由设置宽高 */
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
+            .box3{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        绝对定位的参考点：
+            参考它的包含块：
+                1.对于没有脱离文档流的元素，包含块就是它的父元素
+                2.对于脱离了文档流的元素，包含块就是它的第一个拥有定位属性的祖先元素(如果所有祖先都没有定位，那么包含块就是整个页面)
+
+        <div class="container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

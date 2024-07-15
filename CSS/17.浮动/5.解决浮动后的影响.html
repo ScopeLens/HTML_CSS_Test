@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        解决方案：
+            1.给父元素指定高度
+            2.给父元素设置浮动，带来其他影响
+            3.给父元素设置overflow
+            4.给所有浮动元素的最后面，添加一个块级元素，并给该块级元素设置clear:both
+            5.给浮动元素的父元素设置伪元素，通过伪元素清除浮动，原理和四相同
+                .parent::after{
+                    content:"";
+                    display:block;
+                    clear:both;
+                }
+            布局中一个原则：设置浮动的时候，兄弟元素要么全部浮动，要么全部都不浮动。
+        <script>
+            
+        </script>
+    </body>
+</html>

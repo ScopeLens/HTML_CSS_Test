@@ -1,0 +1,400 @@
+/* 基础设置 */
+.container{
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* #region顶部导航条start */
+
+
+.topbar{
+    height: 30px;
+    background-color: #ECECEC;
+}
+.leftfix{
+    float: left;
+}
+.rightfix{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.welcome{
+    font-size: 0;
+    line-height: 30px;
+    color: #666;
+}
+.welcome span,.welcome a{
+    font-size: 12px;
+}
+.welcome .hello{
+    margin-right: 28px;
+}
+.welcome .login{
+    padding-right: 10px;
+    border-right: 1px solid #666;
+}
+.welcome .register{
+    padding-left: 10px;
+}
+.topbar-nav{
+    color: #666;
+    line-height: 30px;
+}
+.topbar-nav .list li{
+    float: left; 
+}
+.topbar-nav .list li a{
+    padding:0 15px;
+    border-right: 1px solid #666;
+}
+.topbar-nav .list li:first-child a{
+    padding-left: 0px;
+}
+.topbar-nav .list li:last-child a{
+    padding-right: 0px;
+    border: 0;
+}
+/* #endregion顶部导航条end */
+
+/* #region头部 */
+.page-header{
+    height: 120px;
+}
+.page-header .container{
+    height: 120px;
+}
+.logo{
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+}
+.search{
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    right: 0;
+}
+
+.search input{
+    width: 510px;
+    height: 36px;
+    border: 1px solid #DD302D;
+    
+}
+
+.search .button{
+    width: 80px;
+    height: 36px;
+    background-color: #DD302D;
+    margin-top: 42px;
+    text-align: center;
+    line-height: 36px;
+    position: relative;
+}
+
+.search .button img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* #endregion */
+
+/* #region主导航 */
+.main-nav{
+    border-bottom: 1px solid #DD302D;
+}
+
+.main-nav .container .list{
+    height: 48px;
+    line-height: 48px;
+}
+.main-nav .container .list li{
+    color: #333333;
+    font-size: 16px;
+    float: left;
+    margin: 0 10px;
+}
+
+.main-nav .container .list li:first-child{
+    width: 190px;
+    height: 48px;
+    background-color: #DD302D;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 0px;
+}
+
+/* #endregion */
+
+.main{
+    margin: 10px 0;
+}
+
+/* #region内容区_侧边导航 */
+
+.aside-nav{
+    width: 190px;
+    background-color: #f4f4f4;
+}
+
+.aside-nav .list li{
+    height: 20px;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+.aside-nav .list li:first-child{
+    margin-top: 9px;
+}
+
+.aside-nav .list li:last-child{
+    margin-bottom: 9px;
+}
+/* #endregion */
+
+/* #region内容区_侧边二级菜单 */
+.main .container .menu{
+    width: 690px;
+    margin: 10px;
+}
+
+.main .container .menu .list>li{
+    margin-top: 16px;
+}
+
+.main .container .menu .list>li:first-child{
+    margin-top: 18px;
+}
+
+.main .container .menu .list>li:last-child{
+    margin-bottom: 24px;
+}
+
+
+.main .menu .list .second-list li{
+    font-size: 14px;
+    height: 20px;
+    float: left;
+    color: #666;
+    padding: 0 10px;
+    border-left: 1px solid #999;
+}
+
+.main .menu .list .second-list li:first-child{
+    color: #000000;
+    width: 70px;
+    border-left: 0;
+}
+
+/* #endregion */
+
+/* #region内容区_右侧尚品快报 */
+.news{
+    width: 288px;
+    color: #666;
+    border: 1px solid #D9D9D9;
+}
+.news .title{
+    padding-bottom: 10px;
+    margin: 15px 14px 0px 14px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.news .title span{
+    font-size: 14px;
+    color: #000000;
+}
+.news .list li{
+    width: 262px;
+    margin: 12px 14px;
+}
+
+.news .list li::before{
+    content: "[特惠] ";
+}
+/* #endregion */
+
+/* #region内容区_右侧图标导航 */
+.fast-enter .enter-table{
+    margin: 10px;
+    border-width: 0px;
+    width: 270px;
+    height: 270px;
+}
+.fast-enter .enter-table td{
+    width: 25%;
+    border-width: 0px;
+}
+.fast-enter .enter-table .item{
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+
+.fast-enter .enter-table .item img{
+    width: 48px;
+    height: 48px;
+    margin: 0px auto;
+    background:url(../asserts/images/精灵图-侧边功能.png);
+}
+.icon1-1{
+    background-position: 0 0;
+}
+
+.icon1-2{
+    background-position: 100px 0;
+}
+/* #endregion */
+
+/* #region秒杀 */
+.seckill img{
+    float: left;
+    margin: 0 5px;
+}
+.seckill img:first-child{
+    margin-left: 0px;
+}
+.seckill img:last-child{
+    margin-right: 0px;
+}
+/* #endregion */
+
+/* #region楼层_顶部 */
+.floor-top .container .bar{
+    padding: 5px;
+    margin-top: 43px;
+    border-bottom: 1px solid #DD302D;
+}
+.floor-top .container .bar .title{
+    font-size: 20px;
+    color: #000000;
+}
+
+.floor-top .container .bar .bar-nav li{
+    float: left;
+    font-size: 16px;
+    color: #666;
+    padding: 0px 10px;
+    border-left: 1px solid #666;
+}
+
+.floor-top .container .bar .bar-nav li:first-child{
+    border: 0px;
+    color: #DD302D;
+}
+.floor-top .container .nav{
+    height: 432px;
+}
+.floor-top .container .nav>div{
+    float: left;
+    width: 206px;
+    height: 432px;
+}
+.floor-top .container .nav .box1{
+    width: 230px;
+    background-color: #f4f4f4;
+}
+.floor-top .container .nav .box1 .nav{
+    border: 0;
+    margin: 20px 20px 30px 20px;
+    width: 190px;
+    height: 108px;
+    text-align: center;
+}
+.floor-top .container .nav .box1 td{
+    border: 0;
+    font-size: 16px;
+    width: 50%;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.floor-top .container .nav .box1 .box1-img{
+    width: 194px;
+    height: 242px;
+    margin: 0px auto;
+    background-image: url("../asserts/images/编组.png");
+}
+.floor-top .container .nav .box2{
+    width: 340px;
+    background-image: url("../asserts/images/appliance_banner07.png");
+}
+.floor-top .container .nav .box-size{
+    width: 206px;
+    height: 215px;
+}
+.floor-top .container .nav .box3 .top{
+    background-image: url("../asserts/images/微波炉.png");
+}
+.floor-top .container .nav .box3 .bottom{
+    background-image: url("../asserts/images/空气炸锅.png");
+}
+.floor-top .container .nav .box4{
+    background-image: url("../asserts/images/冰箱.png");
+}
+.floor-top .container .nav .box5 .top{
+    background-image: url("../asserts/images/电饭煲.png");
+}
+.floor-top .container .nav .box5 .bottom{
+    background-image: url("../asserts/images/电饭煲2.png");
+}
+/* #endregion */
+
+/* #region楼层_底部 */
+
+/* #endregion */
+
+/* #region页脚 */
+.floor-foot{
+    margin-top: 48px;
+    height: 440px;
+    background-color: #483E3E;
+    overflow: hidden;
+    text-align: center;
+}
+.floor-foot table{
+    margin-top: 48px;
+    margin-bottom: 22px;
+    width: 1190px;
+    height: 176px;
+    border: 0;
+}
+.floor-foot table td{
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.floor-foot hr{
+    border: 1px solid #584D4D;;
+}
+.floor-foot .link{
+    margin-top: 47px;
+    margin-bottom: 10px;
+}
+.floor-foot .link span{
+    font-size: 12px;
+    color: #FFFFFF;
+    border-left: 1px solid #D9D9D9;
+    padding: 0px 26px;
+}
+.floor-foot .link span:first-child{
+    border: 0;
+}
+.floor-foot .container>span{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+/* #endregion */
