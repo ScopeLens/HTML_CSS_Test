@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 伸缩容器 */
+            .outer{
+                width: 700px;
+                height: 500px;
+                background-color: gray;
+
+                display: flex;
+
+                flex-flow: row wrap;
+
+                /* 侧轴的对齐方式 多行*/
+                /* 
+                align-content: flex-start;
+
+                align-content: flex-end;
+
+                align-content: space-around;
+
+                align-content: space-between;
+
+                align-content: space-evenly;
+
+                align-content: stretch; */
+
+                align-content: center;
+            }
+            /* 伸缩项目 必须是子代 成为伸缩项目之后就会块状化 */
+            /* 沿着主轴的方向排列 */
+            .inner{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border: 1px solid black;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+                line-height: 100px;
+            }
+            .inner1{
+                height: 200px;
+            }
+            .inner2{
+                height: 80px;
+            }
+            .inner3{
+                height: 140px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner inner1">1</div>
+            <div class="inner inner2">2</div>
+            <div class="inner inner3">3</div>
+            <div class="inner inner4">4</div>
+            <div class="inner inner5">5</div>
+            <div class="inner inner6">6</div>
+            <div class="inner inner7">7</div>
+            <div class="inner inner8">8</div>
+            <div class="inner inner9">9</div>
+            <div class="inner inner10">10</div>
+            <div class="inner inner11">11</div>
+            <div class="inner inner12">12</div>
+            <div class="inner inner13">13</div>
+            <div class="inner inner14">14</div>
+            <div class="inner inner15">15</div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

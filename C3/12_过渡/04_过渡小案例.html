@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .screen{
+                width: 500px;
+                height: 500px;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 500px;
+                font-size: 50px;
+                font-weight: bold;
+                transition: 2s all;
+                overflow: hidden;
+            }
+            .bgImg{
+                width: 500px;
+                height: 500px;
+                background-image: url("../../resource/pexels-elena-gilash.jpg");
+                background-size: cover;
+                transition: 2s  all;
+            }
+            .gaizi{
+                width: 500px;
+                height: 500px;
+                transition: 2s all;
+            }
+            .hello{
+                opacity: 0;
+                transition: 2s all;
+            }
+            .bgImg:hover .gaizi{
+                width: 500px;
+                height: 500px;
+                background-color: rgba(0, 0, 0, 0.438);
+            }
+            .bgImg:hover .gaizi .hello{
+                opacity: 1;
+                color:transparent;
+                -webkit-text-stroke: 1px white;
+            }
+            .bgImg:hover{
+                transform: scale(1.5) rotate(30deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="screen">
+            <div class="bgImg">
+                <div class="gaizi">
+                    <span class="hello">HelloWorld</span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            
+        </script>
+    </body>
+</html>

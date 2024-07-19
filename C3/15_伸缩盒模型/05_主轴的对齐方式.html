@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 伸缩容器 */
+            .outer{
+                width: 700px;
+                height: 500px;
+                background-color: gray;
+
+                display: flex;
+
+                flex-flow: row wrap;
+
+                /* 主轴的对齐方式 默认值flex-start*/
+
+                /* 主轴的结束位置 */
+                /* justify-content: flex-end; */
+
+                /* 中间对齐 */
+                /* justify-content: center; */
+
+                /* 左右margin相等 */
+                /* justify-content: space-around; */
+
+                /* 贴紧左右两边 */
+                /* justify-content: space-between; */
+
+                /* 均匀分布 */
+                /* justify-content: space-evenly; */
+            }
+            /* 伸缩项目 必须是子代 成为伸缩项目之后就会块状化 */
+            /* 沿着主轴的方向排列 */
+            .inner{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border: 1px solid black;
+                font-size: 30px;
+                font-weight: bold;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner inner1">1</div>
+            <div class="inner inner2">2</div>
+            <div class="inner inner3">3</div>
+            <div class="inner inner4">4</div>
+            <div class="inner inner5">5</div>
+            <div class="inner inner6">6</div>
+            <div class="inner inner7">7</div>
+            <div class="inner inner8">8</div>
+            <div class="inner inner9">9</div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

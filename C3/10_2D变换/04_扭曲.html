@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .outer{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+            }
+            .inner{
+                width: 200px;
+                height: 200px;
+                background-color: yellowgreen;
+                /* 一个值就是在x轴上扭曲 */
+                /* transform: skew(30deg); */
+
+                /* 两个值就是xy轴上扭曲 */
+                transform: skew(20deg,30deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                HelloWorld
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

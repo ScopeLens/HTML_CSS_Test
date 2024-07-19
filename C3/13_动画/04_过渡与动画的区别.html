@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            @keyframes movetoright{
+                from{
+
+                }
+                to{
+                    transform: translateX(600px);
+                }
+            }
+            .outer{
+                width: 700px;
+                height: 200px;
+                border: 1px solid black;
+            }
+            .inner{
+                width: 100px;
+                height: 100px;
+            }
+            .inner1{
+                background-color: orange;
+                transition: 3s all;
+            }
+            .outer:hover .inner1{
+                transform: translateX(600px);
+            }
+            .outer:hover .inner2{
+                animation: movetoright 3s;
+            }
+            .inner2{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner inner1">过渡</div>
+            <div class="inner inner2">动画</div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

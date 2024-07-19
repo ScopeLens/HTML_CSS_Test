@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .outer{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+            }
+            .inner{
+                width: 200px;
+                height: 200px;
+                background-color: yellowgreen;
+                /* 缩放 可以填负数*/
+                /* transform: scaleX(0.5) scaleY(0.5); */
+
+                /* 填一个值的时候表示xy都变换 */
+                /* transform:scale(2); */
+
+                /* 借助缩放，可以实现比浏览器支持的最小字体大小还要小的尺寸 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                HelloWorld
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

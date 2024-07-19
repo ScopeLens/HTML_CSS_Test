@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .outer{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+                position: relative;
+            }
+            .inner{
+                width: 200px;
+                height: 200px;
+                background-color: yellowgreen;
+                /* 水平和垂直方向位移 链式编程*/
+                /* transform: translateX(100px) translateY(100px); */
+
+                /* 一个值表示水平方向位移 */
+                /* transform: translate(100px); */
+
+                /* 两个值表示水平和垂直方向位移 */
+                /* transform: translate(100px,100px); */
+
+                /* 使用百分比时，参考的是自身，但是相对定位参考的父元素 */
+                /* transform: translate(20%); */
+
+                /* 位移和相对定位很相似，但是位移效率更好 */
+                /* 行内元素无法位移 */
+            }
+            .minibox{
+                width: 100px;
+                height: 100px;
+                background-color: rgb(149, 28, 219);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                /* 使用位移实现水平垂直居中 */
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                HelloWorld
+            </div>
+        </div>
+        <div class="outer">
+            <div class="minibox"></div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

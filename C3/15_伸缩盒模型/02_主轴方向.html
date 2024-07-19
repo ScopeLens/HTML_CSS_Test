@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* 伸缩容器 */
+            .outer{
+                width: 700px;
+                height: 500px;
+                background-color: gray;
+
+                display: flex;
+
+                /* 主轴的默认值  从左往右*/
+                /* flex-direction: row; */
+
+                /* 反转从右往左 */
+                /* flex-direction: row-reverse; */
+
+                /* 从上到下 */
+                /* flex-direction: column; */
+
+                /* 从下到上 */
+                flex-direction: column-reverse;
+            }
+            /* 伸缩项目 必须是子代 成为伸缩项目之后就会块状化 */
+            /* 沿着主轴的方向排列 */
+            .inner{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner inner1"></div>
+            <div class="inner inner2"></div>
+            <div class="inner inner3"></div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

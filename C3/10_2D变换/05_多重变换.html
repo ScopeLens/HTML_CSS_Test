@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .outer{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+            }
+            .inner{
+                width: 200px;
+                height: 200px;
+                background-color: yellowgreen;
+                
+            }
+            .inner:hover{
+                width: 200px;
+                height: 200px;
+                background-color: yellowgreen;
+                /* 因为旋转会导致坐标轴变化，所以设置效果时最好把旋转放到最后面，除非需要特殊应用 */
+                transform: translate(100px,200px) scale(2) rotate(30deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                HelloWorld
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .outer{
+                width: 700px;
+                height: 900px;
+                border: 2px solid black;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                transition-property: all;
+                transition-duration: 3s;
+            }
+            .outer:hover>.box{
+                width: 700px;
+            }
+            .box1{ 
+                background-color: yellow;
+                transition-timing-function: ease;
+            }
+            .box2{
+                background-color: tomato;
+                transition-timing-function: linear;
+            }
+            .box3{
+                background-color: rebeccapurple;
+                transition-timing-function: ease-in;
+            }
+            .box4{
+                background-color: green;
+                transition-timing-function: ease-out;
+            }
+            .box5{
+                background-color: blue;
+                transition-timing-function: ease-in-out;
+            }
+            .box6{
+                background-color: grey;
+                transition-timing-function: step-start;
+            }
+            .box7{
+                background-color: greenyellow;
+                transition-timing-function: step-end;
+            }
+            .box8{
+                background-color: orchid;
+                /* 默认值是end */
+                transition-timing-function: steps(10,end);
+            }
+            .box9{
+                background-color: orange;
+                transition-timing-function: cubic-bezier(1,-0.47,.08,1.48);
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="box box1">默认平滑过渡</div>
+            <div class="box box2">linear 线性过渡</div>
+            <div class="box box3">ease-in 慢->快</div>
+            <div class="box box4">ease-out 快->慢</div>
+            <div class="box box5">ease-in-out 慢->快->慢</div>
+            <div class="box box6">step-start==step(1,start)</div>
+            <div class="box box7">step-end==step(1,end)</div>
+            <div class="box box8">steps(步数,发生的时间点)</div>
+            <div class="box box9">贝塞尔曲线</div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

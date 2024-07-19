@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .outer{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+            }
+            .inner{
+                width: 200px;
+                height: 200px;
+                background-color: yellowgreen;
+                /* 通过关键字调整变换原点 */
+                /* transform-origin: right bottom; */
+
+                /* 通过具体像素值来调整变换原点 */
+                /* transform-origin: 150px 150px; */
+
+                /* 通过百分比来调整变换原点 */
+                /* transform-origin: 100% 100%; */
+
+                /* 只给一个值的情况下，另一个值默认是50% */
+                /* transform-origin: top; */
+
+
+                /* 调整变换原点，对于旋转和缩放都是有影响的 */
+                transform: scale(0.5) rotate(45deg);
+
+                /* 调整变换原点，对于位移并不起效 */
+                /* transform: translate(100px,100px); */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                HelloWorld
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>
