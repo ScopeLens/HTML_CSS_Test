@@ -17,9 +17,27 @@
                 width: 100px;
                 height: 100px;
                 background-color: aqua;
-                flex-basis: 200px;
+
+                /* 按比例分配剩余资源 */
+                /* flex-grow: 1; */
+
                 /* 按比例分配损失 */
                 /* flex-shrink: 1; */
+
+                /* 基准长度 */
+                /* flex-basis: auto; */
+
+                /* 可以拉伸，可以压缩，不设置基准长度，简写是flex:auto */
+                /* flex: 1 1 auto; */
+
+                /* 可以拉伸，可以压缩，设置基准长度为0，简写为flex:1 */
+                /* flex: 1 1 0; */
+
+                /* 不可以拉伸，不可以压缩，不设置基准长度，简写为：flex:none */
+                /* flex: 0 0 auto; */
+
+                /* 不可以拉伸，可以压缩，不设置基准长度，简写为：flex:0 auto; */
+                /* flex: 0 1 auto; */
             }
         </style>
     </head>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4627445_ba7ge2m6q0l.css">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            html,body{
+                width: 100%;
+                height: 100%;
+            }
+            .page-header .container{
+                width: 100%;
+                height: 70px;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .icon-quanbu{
+                color: white;
+                font-size: 50px;
+            }
+            .campus{
+                font-size: 18px;
+                height: 40px;
+                color: white;
+                padding: 5px;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 8px;
+                margin: 0 10px;
+            }
+            .page-body{
+                width: 100%;
+                height: calc(100vh - 70px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .page-body .container{
+                width: 1000px;
+                height: 300px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .item{
+                width: 180px;
+                height: 200px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                transition: 0.8s all;
+            }
+            .item:hover{
+                box-shadow: 0px 0px 10px black;
+                transform: translateY(-5px);
+                cursor: pointer;
+            }
+            .iconfont{
+                font-size: 60px;
+            }
+            .item1{
+                background-color: rgb(65, 30, 195);
+            }
+            .item2{
+                background-color: orange;
+            }
+            .item3{
+                background-color: rgb(10, 180, 242);
+            }
+            .item4{
+                background-color: rgb(0, 96, 170);
+            }
+            .item5{
+                background-color: rgb(136, 216, 14);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-header">
+            <div class="container">
+                <i class="iconfont icon-quanbu"></i>
+                <div class="address-nav">
+                    <button class="campus zg-area">国内校区</button>
+                    <button class="campus md-area">缅甸校区</button>
+                    <button class="campus fz-area">非洲校区</button>
+                    <button class="campus mg-area">美国校区</button>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="container">
+                <div class="item item1">
+                    <i class="iconfont icon-aite"></i>
+                    我的邮箱
+                </div>
+                <div class="item item2">
+                    <i class="iconfont icon-yun"></i>
+                    云服务
+                </div>
+                <div class="item item3">
+                    <i class="iconfont icon-shouji"></i>
+                    手机课堂
+                </div>
+                <div class="item item4">
+                    <i class="iconfont icon-weixin"></i>
+                    微信服务
+                </div>
+                <div class="item item5">
+                    <i class="iconfont icon-qunzu"></i>
+                    在线客服
+                </div>
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

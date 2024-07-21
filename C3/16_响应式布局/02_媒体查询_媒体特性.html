@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta chatset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            h1{
+                color: rebeccapurple;
+                font-size: 100px;
+            }
+            /* 只有在视口的宽度小于500px才展示的样式  */
+            @media (max-width:500px){
+                h1{
+                    color: blue;
+                }
+            }
+            /* 只有在视口的宽度大于800px才展示的样式 */
+            @media (min-width:800px){
+                h1{
+                    color: red;
+                }
+            }
+            /* 检测的是设备宽度 */
+            @media (device-width:1536px){
+                h1{
+                    color: orange;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HelloWorld</h1>
+        <script>
+            
+        </script>
+    </body>
+</html>
